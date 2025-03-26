@@ -31,9 +31,13 @@ export class SuccessComponent implements OnInit {
       .subscribe({
         next: (res) => {
           this.orderId = res.orderId;
-          alert(`Order placed successfully!! An email confirmation has been sent to you.\n\nYou will be redirected in 30s.\n\n Order ID: ${res.orderId}`);
+          alert(`Order placed successfully!! An email confirmation has been sent to you.\n\nYou will be redirected in 15s after clicking OK.\n\n Order ID: ${res.orderId}`);
           this.store.dispatch(clearCart());
-          this.router.navigate(['/'])
+          this.zone.run(() => {
+            setTimeout(() => {
+              this.router.navigate(['/']);
+            }, 15000);
+          });
         },
         error: () => {
           alert('Payment verification failed!! Please try again.');

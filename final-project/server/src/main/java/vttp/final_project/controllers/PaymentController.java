@@ -21,7 +21,8 @@ import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
 
 import vttp.final_project.models.Order;
-import vttp.final_project.services.EmailService;
+import vttp.final_project.services.BrevoEmailService;
+// import vttp.final_project.services.GmailEmailService;
 import vttp.final_project.services.OrderService;
 
 @RestController
@@ -31,8 +32,11 @@ public class PaymentController {
     @Autowired
     private OrderService orderService;
     
+    // @Autowired
+    // private GmailEmailService gmailEmailService;
+
     @Autowired
-    private EmailService emailService;
+    private BrevoEmailService brevoEmailService;
 
     @Value("${stripe.secret.key}")
     private String stripeSecretKey;
@@ -82,7 +86,8 @@ public class PaymentController {
         if ("paid".equals(session.getPaymentStatus())) {
             Order order = pendingOrders.remove(sessionId);
             orderService.createNewPurchaseOrder(order);
-            emailService.sendOrderConfirmation(order);
+            brevoEmailService.sendOrderConfirmation(order);
+            // gmailEmailService.sendOrderConfirmation(order);
 
             Map<String, String> response = new HashMap<>();
             response.put("orderId", String.valueOf(order.getOrderId()));
