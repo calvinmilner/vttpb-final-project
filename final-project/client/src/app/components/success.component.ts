@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store';
 import { clearCart } from '../stores/cart.actions';
+import { NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-success',
@@ -16,6 +17,7 @@ export class SuccessComponent implements OnInit {
   private router = inject(Router);
   protected orderId!: string
   private store = inject(Store);
+  private zone = inject(NgZone)
 
   ngOnInit(): void {
     const sessionId = this.activatedRoute.snapshot.queryParamMap.get('sessionId');
@@ -31,7 +33,7 @@ export class SuccessComponent implements OnInit {
           this.orderId = res.orderId;
           alert(`Order placed successfully!! An email confirmation has been sent to you.\n\nYou will be redirected in 30s.\n\n Order ID: ${res.orderId}`);
           this.store.dispatch(clearCart());
-          setTimeout(() => { this.router.navigate(['/']); }, 30000);
+          this.router.navigate(['/'])
         },
         error: () => {
           alert('Payment verification failed!! Please try again.');
