@@ -22,7 +22,6 @@ import com.stripe.param.checkout.SessionCreateParams;
 
 import vttp.final_project.models.Order;
 import vttp.final_project.services.BrevoEmailService;
-// import vttp.final_project.services.GmailEmailService;
 import vttp.final_project.services.OrderService;
 
 @RestController
@@ -31,9 +30,6 @@ public class PaymentController {
 
     @Autowired
     private OrderService orderService;
-    
-    // @Autowired
-    // private GmailEmailService gmailEmailService;
 
     @Autowired
     private BrevoEmailService brevoEmailService;
@@ -87,7 +83,6 @@ public class PaymentController {
             Order order = pendingOrders.remove(sessionId);
             orderService.createNewPurchaseOrder(order);
             brevoEmailService.sendOrderConfirmation(order);
-            // gmailEmailService.sendOrderConfirmation(order);
 
             Map<String, String> response = new HashMap<>();
             response.put("orderId", String.valueOf(order.getOrderId()));
