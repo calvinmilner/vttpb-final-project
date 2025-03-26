@@ -1,0 +1,8 @@
+mongoimport --host=localhost --port=27017 --db=finalproject --collection=category --type=csv --headerline --file=cleaned_category_final.csv --drop
+
+mongoimport --host=localhost --port=27017 --db=finalproject --collection=products --type=csv --headerline --file=cleaned_product_final.csv --drop
+
+
+mongoimport --uri=<railway mongodb uri>/finalproject?authSource=admin --db=finalproject --collection=category --type=csv --headerline --file=cleaned_category_final.csv --drop
+
+mongoimport --uri=<railway mongodb uri>/finalproject?authSource=admin --db=finalproject --collection=products --type=csv --headerline --file=cleaned_product_final.csv --drop

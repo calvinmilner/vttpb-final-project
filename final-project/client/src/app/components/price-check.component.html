@@ -1,0 +1,22 @@
+<!-- <h2>Generated Products from Selection:<span *ngFor="let ing of (selectedIngredients$ | async)"> {{ing.name}}</span></h2> -->
+<h2>Generated Products from Selection</h2>
+<div class="product-grid">
+    <div class="product-card" *ngFor="let product of (products$ | async)">
+        <img [src]="product.imageUrl" alt="{{ product.productName }}" />
+        <p class="name">{{ product.productName }}</p>
+        <p class="price">{{ product.price | currency: 'S$' }}</p>
+
+        <div class="quantity-row">
+            <label for="quantity">Qty:</label>
+            <input type="number" #quantityInput min="1" value="1" class="quantity-input" />
+        </div>
+
+        <button (click)="addToCart(product, quantityInput.valueAsNumber)">
+            Add to Cart
+        </button>
+    </div>
+</div>
+<div class="btn-row">
+    <button class="home-btn" [routerLink]="'/'">Back to Home</button>
+    <button class="checkout-btn" (click)="goToCart()" [disabled]="(cartItems$ | async)?.length === 0">Proceed to Checkout</button>
+</div>

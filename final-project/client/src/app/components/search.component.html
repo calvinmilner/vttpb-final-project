@@ -1,0 +1,35 @@
+<div class="search-container">
+    <form [formGroup]="form" (submit)="search()" class="search-form">
+        <mat-card class="search-card">
+            <mat-form-field appearance="outline" class="search-field">
+                <mat-label>Search by Ingredient</mat-label>
+                <input matInput placeholder="e.g. Chicken" formControlName="query" />
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">
+                <mat-icon>search</mat-icon> Search
+            </button>
+        </mat-card>
+    </form>
+</div>
+
+<br />
+
+<div class="recipe-grid">
+    @for (r of recipes; track r.recipeId) {
+    <mat-card class="recipe-card">
+        <img mat-card-image [src]="r.imageUrl" alt="{{ r.title }}" />
+        <mat-card-header>
+            <mat-card-title>{{ r.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions class="card-actions">
+            <button mat-raised-button color="primary" [routerLink]="['/recipes', r.recipeId]">View Details</button>
+        </mat-card-actions>
+    </mat-card>
+    } @empty {
+    <div class="empty-recipes">
+        <mat-icon class="empty-icon">search_off</mat-icon>
+        <h2>No recipes searched</h2>
+        <p>Try typing in a keyword above to get started.</p>
+    </div>
+    }
+</div>

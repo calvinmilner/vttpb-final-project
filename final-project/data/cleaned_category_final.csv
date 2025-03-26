@@ -1,0 +1,180 @@
+id,name,group
+1585,Canned Meat,Canned and Jarred
+1587,Canned Beans,Canned and Jarred
+1588,Other Canned Seafood,Canned and Jarred
+1589,Canned Vegetables,Canned and Jarred
+1590,Canned Fruits & Desserts,Canned and Jarred
+1640,Dark Beer & Stout,Alcoholic Beverages
+1655,Black Tea,Tea and Coffee
+1658,Green Tea,Tea and Coffee
+1661,Carbonated Drinks,Beverages
+1663,Mineral Water,Beverages
+1664,Sparkling Water,Beverages
+1782,"Baking Paper, Foil, Wrap",Baking
+1803,Fresh Milk,"Milk, Eggs, Other Dairy"
+1827,White Wine,Alcoholic Beverages
+1828,Red Wine,Alcoholic Beverages
+1833,Drinking Vinegar,"Oil, Vinegar, Salad Dressing"
+1853,Frozen Fish,Frozen
+1860,Cheese Spreads,Cheese
+1869,Shredded & Grated Cheese,Cheese
+1870,Frozen Breaded Seafood,Frozen
+1885,Fresh Eggs,"Milk, Eggs, Other Dairy"
+1886,Preserved Eggs,"Milk, Eggs, Other Dairy"
+1896,Frozen Pork,Frozen
+1898,Fresh Chicken & Poultry,Meat
+1926,Rice,Pasta and Rice
+1955,Frozen Beef & Lamb,Frozen
+1971,Chilled Fish Balls & Fish Cakes,Seafood
+1979,Ice Coffee,Tea and Coffee
+1987,Whisky,Alcoholic Beverages
+2054,Berry Juice,Beverages
+2075,Lemon & Lime Juice,Beverages
+2076,Butter,"Nut butters, Jams, and Honey"
+2121,Still Water,Beverages
+2129,Fresh Pork,Meat
+2151,Cranberry & Pomegranate Juice,Beverages
+2155,Frozen Vegetables,Frozen
+2156,Cheese Blocks,Cheese
+2186,Frozen Chicken & Poultry,Frozen
+2191,Sliced Cheese,Cheese
+2196,Frozen Cakes,Frozen
+2205,Frozen Fruits,Frozen
+2212,Alkaline Water,Beverages
+2214,Baking Needs,Baking
+2261,Condensed Milk & Creamers,"Milk, Eggs, Other Dairy"
+2272,Spices & Herbs,Spices and Seasonings
+2293,Apple Juice,Beverages
+2294,Mixed Juice,Beverages
+2305,Grape Juice,Beverages
+2306,Tropical Juice,Beverages
+2326,Japanese Rice,Pasta and Rice
+2408,Tomato & Vegetable Juice,Beverages
+2410,Orange Juice,Beverages
+2538,Coffee,Tea and Coffee
+2539,Condiments,Condiments
+2543,Frozen Desserts,Frozen
+2884,Fresh Beef & Lamb,Meat
+3418,Milk Tea,Tea and Coffee
+3463,Fresh Fish & Seafood,Seafood
+3499,"Black, Brown & Red Rice",Pasta and Rice
+3502,Glutinous Rice,Pasta and Rice
+3520,Cooking Oil,"Oil, Vinegar, Salad Dressing"
+3629,Jam,"Nut butters, Jams, and Honey"
+3630,Honey,"Nut butters, Jams, and Honey"
+3637,Adult Cereals,Cereal
+3640,Kids Cereals,Cereal
+3703,Savoury Snacks,Savory Snacks
+3994,Beef Meatball,Meat
+3995,Chicken Meatball,Meat
+3996,Pork Meatball,Meat
+4287,Sparkling Wine,Alcoholic Beverages
+4288,Champagne,Alcoholic Beverages
+4289,Dessert Wine,Alcoholic Beverages
+4301,Soy Milk,"Milk, Eggs, Other Dairy"
+4307,"Noodles, Rice Cake & Pasta",Pasta and Rice
+8889,Pasta,Pasta and Rice
+8892,Spices,Spices and Seasonings
+8910,Salad Dressing,"Oil, Vinegar, Salad Dressing"
+13028,Baking Chocolate & Cocoa,Baking
+13038,Baking Powder & Soda,Baking
+13862,Frozen Soups,Frozen
+14439,Craft Beer,Alcoholic Beverages
+14453,Fresh Nuts,Nuts
+16284,Bread Slice,Bread
+16285,Bread Whole,Bread
+16288,Bakery Breakfast,Bakery/Bread
+16289,Bakery Snacks,Bakery/Bread
+16290,Garlic Bread & Pizza Bases,Bread
+16291,Bakery Sweet Treats,Bakery/Bread
+16810,Mixed Nuts,Nuts
+21415,Vinegar,"Oil, Vinegar, Salad Dressing"
+24565,Brandy & Cognac,Alcoholic Beverages
+22436,Avocados,Produce
+2271,Berries & Cherries,Produce
+2224,Apples & Pears,Produce
+2169,Kiwi & Grapes,Produce
+2060,Stone Fruits,Produce
+2057,Citrus Fruits,Produce
+1997,Tropical Fruits,Produce
+13590,Brinjals & Gourds,Produce
+13589,Squashes,Produce
+13588,Cabbages & Lettuces,Produce
+13587,Celeries,Produce
+13586,Potatoes & Roots,Produce
+13585,Carrots,Produce
+13320,Corns,Produce
+13319,Tomatoes,Produce
+2920,Broccoli & Cauliflowers,Produce
+2139,Cucumbers & Lady Fingers,Produce
+2128,Mushrooms,Produce
+1911,Asparagus & Sprouts,Produce
+1909,"Garlic, Ginger & Onions",Produce
+1908,Chillies & Capsicums,Produce
+1906,Leafy Vegetables,Produce
+2205,Frozen Fruits,Frozen
+2155,Frozen Vegetables,Frozen
+4359,Flavoured Milk,"Milk, Eggs, Other Dairy"
+2204,Cultured Milk,"Milk, Eggs, Other Dairy"
+1866,Juices,Beverages
+3522,Specialty Oil,"Oil, Vinegar, Salad Dressing"
+3503,Sesame Oil,"Oil, Vinegar, Salad Dressing"
+3500,Grapeseed Oil,"Oil, Vinegar, Salad Dressing"
+3441,Coconut Oil,"Oil, Vinegar, Salad Dressing"
+2313,Canola Oil,"Oil, Vinegar, Salad Dressing"
+2194,Corn & Soya Bean Oil,"Oil, Vinegar, Salad Dressing"
+2130,Olive Oil,"Oil, Vinegar, Salad Dressing"
+1980,Sunflower Oil,"Oil, Vinegar, Salad Dressing"
+1837,Vegetable Oil,"Oil, Vinegar, Salad Dressing"
+13040,"Gelatin, Gum & Yeast",Baking
+13039,"Dried Fruits, Nuts & Sprinkles",Baking
+13038,Baking Powder & Soda,Baking
+13036,Flour,Baking
+13035,Food Colouring & Icing,Baking
+13029,Essence & Flavours,Baking
+13028,Baking Chocolate & Cocoa,Baking
+13021,Cake & Cookie Mix,Baking
+8833,Breadcrumbs & Tempura Flour,Baking
+1624,Coconut Products,Baking
+1619,Jelly Powder & Mix,Baking
+1600,Condiments,Condiments
+16813,Dried & Preserved Fruits,Dried Fruits
+16809,"Sunflower, Melon & Pumpkin Seeds",Savory Snacks
+16811,Chestnuts,Nuts
+16807,Peanuts & Groundnuts,Nuts
+16805,Walnuts,Nuts
+16804,Pistachios,Nuts
+16803,Macadamia,Nuts
+16802,Cashews,Nuts
+16801,Almonds,Nuts
+3659,Sweets,Sweet Snacks
+12689,Mochi,Sweet Snacks
+3662,Marshmallow & Nougat,Sweet Snacks
+3661,Lollipops & Hard Candy,Sweet Snacks
+3660,Soft & Chewy Candy,Sweet Snacks
+1927,Mints & Lozenges,Sweet Snacks
+1672,Gummies & Pastilles,Sweet Snacks
+1670,Assorted Candies,Sweet Snacks
+3644,Chocolates,Sweet Snacks
+3649,Chocolate Pouches,Sweet Snacks
+3648,Assorted Chocolates,Sweet Snacks
+3647,Multi Pack Chocolates,Sweet Snacks
+3646,Chocolate Boxes & Gifts,Sweet Snacks
+3645,Chocolate Bars & Blocks,Sweet Snacks
+1801,"Dairy, Chilled & Eggs",Cheese
+4308,Chilled Beverages,Beverages
+1566,Sugar & Sweeteners,Baking
+1936,Creamers,Baking
+1920,Icing & Caster Sugar,Baking
+1574,Sweeteners,Baking
+1569,Granulated Sugar,Baking
+1568,Raw & Brown Sugar,Baking
+1567,"Sugar Cubes, Sticks & Crystals",Baking
+8888,Noodles,Pasta and Rice
+4316,Meatballs,Meat
+1914,Ham & Salami,Meat
+1798,Frozen,Meat
+1950,Instant Cereals,Cereal
+1629,Cereal Bars,Cereal
+3623,Maple Syrup,Cereal
+3641,"Granola, Muesli & Oats",Cereal

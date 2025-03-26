@@ -1,0 +1,51 @@
+.ingredients-table,
+.instructions-table {
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    border-collapse: collapse;
+    border-color: black;
+}
+
+.ingredients-table th,
+.ingredients-table td,
+.instructions-table th,
+.instructions-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ingredients-table img {
+    border-radius: 6px;
+}
+
+table {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+}

@@ -1,0 +1,63 @@
+<mat-card *ngIf="information">
+    <h2>{{ information.title }}</h2>
+    <div class="image-container">
+        <img [src]="information.imageUrl" width="600" />
+    </div>
+
+
+    <h3>Ingredients</h3>
+    <table class="ingredients-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Amount</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (ing of information.ingredients; track $index) {
+            <tr>
+                <td>{{ ing.name }}</td>
+                <td><img [src]="ing.imageUrl" width="60" /></td>
+                <td>{{ ing.amount }} {{ ing.unit }}</td>
+                <td><mat-checkbox class="example-margin" (change)="toggleSelection(ing, $event.checked)"></mat-checkbox>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3>Instructions</h3>
+    <table class="instructions-table">
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Instruction</th>
+                <th>Equipment</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (ins of information.instructions; track ins.step) {
+            <tr>
+                <td>{{ ins.step }}</td>
+                <td>{{ ins.instruction }}</td>
+                <td>{{ ins.equipmentName }}</td>
+            </tr>
+            } @empty {
+            <tr>
+                <td></td>
+                <td>
+                    <h3>No Instructions for this Recipe</h3>
+                </td>
+                <td></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</mat-card>
+<div class="btn-row">
+    <button mat-stroked-button color="warn" type="button" [routerLink]="'/'">Back</button>
+    <button mat-raised-button color="primary" type="button" (click)="proceedToCheckPrice()"
+        [disabled]="(selectedIngredientsCount$ | async) === 0">Check Ingredient Prices</button>
+</div>
