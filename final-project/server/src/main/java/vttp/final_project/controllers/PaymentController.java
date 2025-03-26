@@ -44,7 +44,7 @@ public class PaymentController {
 
     @PostMapping("/create-checkout-session")
     public Map<String, String> createCheckoutSession(@RequestBody Order order) throws StripeException {
-        System.out.println(order.toString());
+        
         Stripe.apiKey = stripeSecretKey;
 
         long amount = (long) (order.getTotalAmount() * 100);

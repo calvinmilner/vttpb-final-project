@@ -18,7 +18,6 @@ public class OrderRepository {
 
     @Transactional
     public void createNewPurchaseOrder(Order order) {
-        System.out.println("Executing SQL: " + Constants.SQL_CREATE_ORDER);
         jdbcTemplate.update(Constants.SQL_CREATE_ORDER, order.getOrderId(), order.getName(), order.getEmail(),
                 order.getAddress(), order.getPhone(), order.getTotalAmount());
         saveItems(order.getOrderId(), order.getCart().getItems());
