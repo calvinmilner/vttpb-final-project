@@ -118,7 +118,7 @@ id,name,group
 2204,Cultured Milk,"Milk, Eggs, Other Dairy"
 1866,Juices,Beverages
 3522,Specialty Oil,"Oil, Vinegar, Salad Dressing"
-3503,Sesame Oil,Ethnic Foods
+3503,Sesame Oil,"Oil, Vinegar, Salad Dressing"
 3500,Grapeseed Oil,"Oil, Vinegar, Salad Dressing"
 3441,Coconut Oil,"Oil, Vinegar, Salad Dressing"
 2313,Canola Oil,"Oil, Vinegar, Salad Dressing"
@@ -134,7 +134,7 @@ id,name,group
 13029,Essence & Flavours,Baking
 13028,Baking Chocolate & Cocoa,Baking
 13021,Cake & Cookie Mix,Baking
-8833,Breadcrumbs & Tempura Flour,Bakery/Bread
+8833,Breadcrumbs & Tempura Flour,Baking
 1624,Coconut Products,Baking
 1619,Jelly Powder & Mix,Baking
 1600,Condiments,Condiments
