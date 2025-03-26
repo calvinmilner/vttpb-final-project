@@ -1,9 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ProductService } from '../services/product.service';
-import { CartSlice, Order, Product } from '../../models';
-import { IngredientStore } from '../stores/ingredient.store';
+import { Order, Product } from '../../models';
 import { Observable, first } from 'rxjs';
-import { CartStore } from '../stores/cart.store';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OrderService } from '../services/order.service';

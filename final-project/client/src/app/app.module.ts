@@ -9,9 +9,7 @@ import { SearchComponent } from './components/search.component';
 import { RecipeDetailsComponent } from './components/recipe-details.component';
 import { PurchaseOrderComponent } from './components/purchase-order.component';
 import { ProductService } from './services/product.service';
-import { IngredientStore } from './stores/ingredient.store';
 import { PriceCheckComponent } from './components/price-check.component';
-import { CartStore } from './stores/cart.store';
 import { OrderService } from './services/order.service';
 import { PaymentService } from './services/payment.service';
 import { SuccessComponent } from './components/success.component';
@@ -53,8 +51,6 @@ const appRoutes: Routes = [
   providers: [provideHttpClient(),
     RecipeService,
     ProductService,
-    IngredientStore,
-    CartStore,
     OrderService,
     PaymentService
   ],

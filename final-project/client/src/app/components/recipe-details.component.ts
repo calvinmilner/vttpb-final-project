@@ -2,7 +2,6 @@ import { Component, Input, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RecipeService } from '../services/recipe.service';
 import { Information, Ingredient } from '../../models';
-import { IngredientStore } from '../stores/ingredient.store';
 import { Observable } from 'rxjs';
 import { first, map } from 'rxjs/operators';
 import { Store } from '@ngrx/store';

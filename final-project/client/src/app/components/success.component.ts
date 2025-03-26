@@ -1,7 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CartStore } from '../stores/cart.store';
 import { HttpClient } from '@angular/common/http';
+import { Store } from '@ngrx/store';
+import { clearCart } from '../stores/cart.actions';
 
 @Component({
   selector: 'app-success',
@@ -13,8 +14,8 @@ export class SuccessComponent implements OnInit {
   private http = inject(HttpClient);
   private activatedRoute = inject(ActivatedRoute);
   private router = inject(Router);
-  private cartStore = inject(CartStore);
   protected orderId!: string
+  private store = inject(Store);
 
   ngOnInit(): void {
     const sessionId = this.activatedRoute.snapshot.queryParamMap.get('sessionId');
@@ -29,7 +30,7 @@ export class SuccessComponent implements OnInit {
         next: (res) => {
           this.orderId = res.orderId;
           alert(`Order placed successfully!! An email confirmation has been sent to you.\n\nYou will be redirected in 30s.\n\n Order ID: ${res.orderId}`);
-          this.cartStore.clearCart();
+          this.store.dispatch(clearCart());
           setTimeout(() => { this.router.navigate(['/']); }, 30000);
         },
         error: () => {

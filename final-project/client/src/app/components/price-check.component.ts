@@ -1,9 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { IngredientStore } from '../stores/ingredient.store';
 import { Product } from '../../models';
 import { ProductService } from '../services/product.service';
 import { Observable, filter, forkJoin, map, switchMap, tap } from 'rxjs';
-import { CartStore } from '../stores/cart.store';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { selectSelectedIngredients } from '../stores/ingredients.selectors';

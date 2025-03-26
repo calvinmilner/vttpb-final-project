@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
@@ -16,8 +14,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   exports: [
-    MatAutocompleteModule,
-    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
